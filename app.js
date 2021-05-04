@@ -1,6 +1,6 @@
 // create dark background
 var mode = document.createElement("DIV");
-mode.style.position = "fixed";
+mode.style.position = "absolute";
 mode.style.top = "0px";
 mode.style.left = "0px";
 mode.style.width = "100%";
