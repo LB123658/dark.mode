@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DarkMode js</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#title {
+color: #0366d6;
+font-family: arial;
+font-size: 50px;
+position: absolute;
+top: 0px;
+left: 50%;
+width: 200px;
+text-align: center;
+user-select: none;
+margin-left: -100px;
+}
+#title:hover {
+text-decoration: underline;
+cursor: pointer;
+}
+.i {
+font-style: italic;
+}
+#about {
+font-family: arial;
+color: grey;
+font-size: 20px;
+position: absolute;
+top: 150px;
+margin-left: 5%;
+margin-right: 5%;
+}
+.highlight:hover {
+background: yellow;
+cursor: default;
+}
+#code {
+width: 100%;
+height: 100px;
+border: 1px solid grey;
+border-radius: 7px;
+background: black;
+color: lightgrey;
+font-weight: bold;
+cursor: pointer;
+}
+#code:focus {
+outline-width: 0;
+cursor: auto;
+}
+
+</style>
+</head>
+<body>
+
+<p id="title">DarkMode</p>
+
+<p id="about">Switch any website to dark mode. Simply paste the code provided into the JavaScript console of any website to switch it to dark mode. Test it on this site to see how it works.<br><span class="i">Reloading the site you use this on will turn off dark mode.</span><br><br>
+How to access JavaScript console:<br>
+On Mac: <span class="highlight">option + command + c, then at the top click on "Console"</span><br>
+On other computers: <span class="highlight">right click and "Inspect", then at the top click on "Console"</span><br><br>
+
+<textarea id="code" onclick="copy()" title="Click to copy code">
+var script = document.createElement("SCRIPT");
+script.src = "https://lb123658.github.io/dark.mode/app.js";
+document.body.appendChild(script);
+</textarea>
+</p>
+
+<script>
+function copy() {
+  var copyText = document.getElementById("code");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Code copied...");
+}  
+</script>
+</body>
+</html>
