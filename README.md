@@ -10,4 +10,4 @@ document.body.appendChild(script);
 On Mac ```option + command + c```\
 Other computers ```right click and "Inspect". Then at the top click on "Console"```
 #### See code
-[Download file] (https://lb123658.github.io/dark.mode/app.js)
+[Download file] (https://lb123658.github.io/dark.mode/app.js).
