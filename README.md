@@ -10,5 +10,3 @@ document.body.appendChild(script);
 #### How to access JavaScript console:
 On Mac ```option + command + c```\
 Other computers ```right click and "Inspect". Then at the top click on "Console"```
-#### See code
-[Open file](https://lb123658.github.io/dark.mode/app.js) to see the code that turns on dark mode.
