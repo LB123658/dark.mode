@@ -8,4 +8,3 @@ mode.style.height = "100%";
 mode.style.background = "#282828";
 mode.style.zIndex = "-1";
 document.body.appendChild(mode);
-
