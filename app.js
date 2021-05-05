@@ -54,7 +54,7 @@ css.type = "text/css";
 css.href = "https://lb123658.github.io/Boost-HTML-Editor/library.css";
 document.head.appendChild(css);
 
-var b = document.createElement("BUTTON");
+var b = document.createElement("A");
 b.className = "blue-social";
 b.style.position = "absolute";
 b.style.right = "15%";
@@ -63,4 +63,6 @@ b.style.top = "10px";
 b.style.visibility = "visible";
 b.innerHTML = "DarkMode js";
 b.title = "DarkMode js";
+b.href = "https://lb123658.github.io/dark.mode";
+b.target = "_blank";
 document.body.appendChild(b);
