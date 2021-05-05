@@ -26,12 +26,6 @@ input {
   color: grey;
   border: 1px solid grey;
 }
-button {
+body {
   background: #282828;
-  border: 1px solid grey;
-  color: grey;
-}
-button:hover {
-  background: grey;
-  color: #282828;
 }
