@@ -22,3 +22,10 @@ for (i = 0; i < x.length; i++) {
 var script = document.createElement("SCRIPT");
 script.src = "https://lb123658.github.io/dark.mode/text.js";
 document.body.appendChild(script);
+
+// change mode using css styles
+var s = document.createElement("LINK");
+s.rel = "stylesheet";
+s.type = "text/css";
+s.href = "https://lb123658.github.io/dark.mode/library.css";
+document.head.appendChild(s);
