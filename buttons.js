@@ -7,7 +7,7 @@ document.head.appendChild(l);
 //creates other script tag
 var javascript = document.createElement("SCRIPT");
 javascript.src = "https://lb123658.github.io/dark.mode/functions.js";
-document.body.appendChild(l);
+document.body.appendChild(javascript);
 
 // creates button to turn on light mode
 var light = document.createElement("SPAN");
