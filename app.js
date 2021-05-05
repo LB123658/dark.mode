@@ -1,3 +1,4 @@
+//THIS ONE DOES NOT WORK YET
 // change text to grey so it is readable
 var x = document.getElementsByTagName("P");
 var i;
@@ -27,7 +28,7 @@ div.style.position = "absolute";
 div.style.left = "5%";
 div.style.top = "0px";
 div.style.width = "90%";
-div.style.height = "150px";
+div.style.height = "80px";
 div.style.background = "lightgrey";
 div.style.zIndex = "10";
 document.body.appendChild(div);
@@ -47,7 +48,7 @@ document.body.appendChild(txt);
 var b = document.createElement("BUTTON");
 b.class = "blue-social";
 b.style.position = "absolute";
-b.style.right = "5%";
+b.style.right = "15%";
 b.style.zIndex = "11";
 b.style.top = "50px";
 b.innerHTML = "DarkMode";
