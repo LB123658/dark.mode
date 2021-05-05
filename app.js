@@ -1,4 +1,4 @@
-//THIS ONE DOES NOT WORK YET
+//THIS CREATES THE DARKMODE WARNING AND ABOUT DARKMODE JS BUTTON
 // change text to grey so it is readable
 var x = document.getElementsByTagName("P");
 var i;
@@ -11,7 +11,7 @@ var i;
 for (i = 0; i < x.length; i++) {
   x[i].style.color = "grey";
 }
-// change inputs to grey so it is readable
+// change inputs to grey so it looks better
 var x = document.getElementsByTagName("INPUT");
 var i;
 for (i = 0; i < x.length; i++) {
