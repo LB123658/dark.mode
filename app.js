@@ -45,6 +45,12 @@ txt.style.userSelect = "none";
 txt.innerHTML = "Reloading or leaving this page will turn off dark mode.";
 document.body.appendChild(txt);
 
+var css = document.createElement("LINK");
+css.rel = "stylesheet";
+css.type = "text/css";
+css.href = "https://lb123658.github.io/Boost-HTML-Editor/library.css";
+document.head.appendChild(css);
+
 var b = document.createElement("BUTTON");
 b.class = "blue-social";
 b.style.position = "absolute";
@@ -54,9 +60,3 @@ b.style.top = "50px";
 b.innerHTML = "DarkMode";
 b.title = "Learn mode about DarkMode js";
 document.body.appendChild(b);
-
-var css = document.createElement("LINK");
-css.rel = "stylesheet";
-css.type = "text/css";
-css.href = "https://lb123658.github.io/Boost-HTML-Editor/library.css";
-document.head.appendChild(css);
