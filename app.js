@@ -21,6 +21,7 @@ mode.style.width = "100%";
 mode.style.height = "100%";
 mode.style.background = "#282828";
 mode.style.zIndex = "-1";
+mode.className = "dark";
 document.body.appendChild(mode);
 
 //create buttons about DarkMode js
@@ -78,5 +79,4 @@ b.innerHTML = "DarkMode js";
 b.title = "Learn more about DarkMode js";
 b.href = "https://lb123658.github.io/dark.mode";
 b.target = "_blank";
-b.className = "b";
 document.body.appendChild(b);
