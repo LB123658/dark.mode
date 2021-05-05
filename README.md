@@ -15,3 +15,10 @@ You can build DarkMode into your website so it can have a dark mode without crea
 ```
 <script src="https://lb123658.github.io/dark.mode/functions.js"></script>
 ```
+#### New experiment version
+Paste this code into the console for a slightly different dark mode with new features. This one combines JavaScript and CSS.
+```
+var script = document.createElement("SCRIPT");
+script.src = "https://lb123658.github.io/dark.mode/app.js";
+document.body.appendChild(script);
+```
