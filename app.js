@@ -61,6 +61,7 @@ b.style.right = "15%";
 b.style.zIndex = "11";
 b.style.top = "10px";
 b.style.visibility = "visible";
+b.style.padding = "10px";
 b.innerHTML = "DarkMode js";
 b.title = "DarkMode js";
 b.href = "https://lb123658.github.io/dark.mode";
