@@ -1,5 +1,5 @@
 
-* {
+body {
   transform: translate(0px,50px); 
 }
 .div {
@@ -12,6 +12,15 @@
   transform: translate(0px, -50px);
   color: white;
 }
+input {
+  background: #282828;
+  color: grey;
+  border: 1px solid grey;
+}
+body {
+  background: #282828;
+}
+/* dark styles already in js 
 .dark {
   visibility: visible;
   position: fixed;
@@ -21,12 +30,4 @@
   height: 100%;
   background: #282828;
   z-index: -1;
-}
-input {
-  background: #282828;
-  color: grey;
-  border: 1px solid grey;
-}
-body {
-  background: #282828;
-}
+}   */
