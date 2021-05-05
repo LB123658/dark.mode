@@ -3,6 +3,7 @@
 <head>
 <title>DarkMode js</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="https://lb123658.github.io/dark.mode/favicon.png"/>
 <style>
 #title {
 color: #0366d6;
@@ -15,10 +16,11 @@ width: 200px;
 text-align: center;
 user-select: none;
 margin-left: -100px;
+transition: transform .2s;
 }
 #title:hover {
-text-decoration: underline;
-cursor: pointer;
+cursor: default;
+transform: scale(1.09);
 }
 .i {
 font-style: italic;
@@ -32,11 +34,14 @@ top: 150px;
 margin-left: 5%;
 margin-right: 5%;
 }
+.highlight {
+color: #383838;
+}
 .highlight:hover {
 background: yellow;
 cursor: default;
 }
-#code {
+.code {
 width: 100%;
 height: 100px;
 border: 1px solid grey;
@@ -45,12 +50,45 @@ background: black;
 color: lightgrey;
 font-weight: bold;
 cursor: pointer;
+font-size: 16px;
 }
-#code:focus {
+.code:focus {
 outline-width: 0;
 cursor: auto;
 }
-
+#github {
+position: abstolue;
+top: 0px;
+right: 0px;
+cursor: pointer;
+}
+#download {
+height: 40px;
+width: 100%;
+background: #0366d6;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 20px;
+color: white;
+transition: transform .2s;
+}
+#download:hover {
+opacity: 0.9;
+transform: scale(1.05);
+}
+#first-code {
+transition: transform .2s;
+}
+#first-code:hover {
+transform: scale(1.05);
+}
+#second-code {
+transition: transform .2s;
+}
+#second-code:hover {
+transform: scale(1.05);
+}
 </style>
 </head>
 <body>
@@ -62,21 +100,45 @@ How to access JavaScript console:<br>
 On Mac: <span class="highlight">option + command + c, then at the top click on "Console"</span><br>
 On other computers: <span class="highlight">right click and "Inspect", then at the top click on "Console"</span><br><br>
 
-<textarea id="code" onclick="copy()" title="Click to copy code">
+<textarea class="code" onclick="copy()" title="Click to copy code" id="first-code">
 var script = document.createElement("SCRIPT");
 script.src = "https://lb123658.github.io/dark.mode/text.js";
 document.body.appendChild(script);
 </textarea>
+<br><br>
+Build DarkMode js into a website:<br>
+Paste the following JavaScript code into your HTML. Make sure that there is a button with <span class="highlight">onclick="on()"</span>, to turn on dark mode and one with <span class="highlight">onclick="off()"</span> to turn off dark mode. You can also download the code to put it in a website.<br><br>
+<textarea class="code" onclick="copySecond()" title="Click to copy code" id="second-code">
+<script src="https://lb123658.github.io/dark.mode/functions.js"></script>
+</textarea><br><br>
+<a href="functions.js" download>
+<button id="download">Download DarkMode js for websites</button></a>
+<br><br><br><br>
 </p>
+<a href="https://github.com/LB123658/dark.mode" target="_blank">
+<svg id="github" onmouseover="hover()" onmouseout="off()"width="80" height="80" viewBox="0 0 250 250" style="fill:#282828; color:#fff; position: absolute; top: 0; border: 0; right: 0;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor"></path></svg></a>
 
 <script>
 function copy() {
-  var copyText = document.getElementById("code");
+  var copyText = document.getElementById("first-code");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
   alert("Code copied...");
-}  
+} 
+function copySecond() {
+  var copyText = document.getElementById("second-code");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Code copied...");
+} 
+function hover() {
+document.getElementById("github").style.fill = "#0366d6";
+}
+function off() {
+document.getElementById("github").style.fill = "#282828";
+}
 </script>
 </body>
 </html>
