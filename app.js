@@ -50,8 +50,7 @@ b.style.zIndex = "11";
 b.style.top = "50px";
 b.innerHTML = "DarkMode";
 b.title = "Learn mode about DarkMode js";
-b.addEventListener("click", openLink() {
-                   window.open("https://lb123658.github.io/dark.mode/", "_blank").focus();
+b.addEventListener("click", openLink() {window.open("https://lb123658.github.io/dark.mode/", "_blank").focus();
 });
 document.body.appendChild(b);
 
