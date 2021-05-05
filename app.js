@@ -75,6 +75,7 @@ b.style.padding = "10px";
 b.style.fontFamily = "arial";
 b.style.textDecoration = "none";
 b.style.textAlign = "center";
+b.style.transform = "translate(0px, -50px)";
 b.innerHTML = "DarkMode js";
 b.title = "Learn more about DarkMode js";
 b.href = "https://lb123658.github.io/dark.mode";
