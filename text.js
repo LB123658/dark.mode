@@ -8,7 +8,7 @@ for (i = 0; i < x.length; i++) {
 var x = document.getElementsByTagName("A");
 var i;
 for (i = 0; i < x.length; i++) {
-  x[i].style.color = "grey";
+  x[i].style.color = "lightgrey";
 }
 // create dark background
 var mode = document.createElement("DIV");
