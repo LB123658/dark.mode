@@ -9,7 +9,7 @@ document.body.appendChild(script);
 ```
 #### How to access JavaScript console:
 On Mac ```option + command + c```\
-Other computers ```right click and "Inspect". Then at the top click on "Console"```\\
+Other computers ```right click and "Inspect". Then at the top click on "Console"```
 #### DarkMode built into websites
 You can build DarkMode into your website so it can have a dark mode without creating one yourself. Use the JavaScript code below in your website but make sure that there are buttons doing functions ```on()``` to turn on dark mode, and ```off()``` to turn it off.
 ```
