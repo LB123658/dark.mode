@@ -52,11 +52,18 @@ css.href = "https://lb123658.github.io/Boost-HTML-Editor/library.css";
 document.head.appendChild(css);
 
 var b = document.createElement("BUTTON");
-b.class = "blue-social";
+b.className = "blue-social";
 b.style.position = "absolute";
 b.style.right = "15%";
 b.style.zIndex = "11";
 b.style.top = "50px";
-b.innerHTML = "DarkMode";
-b.title = "Learn mode about DarkMode js";
+b.innerHTML = "Got it";
+b.title = "Close warning";
+b.addEventListener("click", close());
 document.body.appendChild(b);
+
+function close() {
+  div.style.visibility = "hidden";
+  txt.style.visibility = "hidden";
+  b.style.visibility = "hidden";
+}
