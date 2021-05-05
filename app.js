@@ -11,6 +11,13 @@ var i;
 for (i = 0; i < x.length; i++) {
   x[i].style.color = "grey";
 }
+// close warning about dark mode
+function close() {
+  div.style.visibility = "hidden";
+  txt.style.visibility = "hidden";
+  b.style.visibility = "hidden";
+}
+
 // create dark background
 var mode = document.createElement("DIV");
 mode.style.position = "fixed";
@@ -31,6 +38,7 @@ div.style.width = "90%";
 div.style.height = "80px";
 div.style.background = "lightgrey";
 div.style.zIndex = "10";
+div.style.visibility = "visible";
 document.body.appendChild(div);
 
 var txt = document.createElement("P");
@@ -42,6 +50,7 @@ txt.style.top = "10px";
 txt.style.color = "grey";
 txt.style.fontSize = "16px";
 txt.style.userSelect = "none";
+txt.style.visibility = "visible";
 txt.innerHTML = "Reloading or leaving this page will turn off dark mode.";
 document.body.appendChild(txt);
 
@@ -57,13 +66,8 @@ b.style.position = "absolute";
 b.style.right = "15%";
 b.style.zIndex = "11";
 b.style.top = "50px";
+b.style.visibility = "hidden";
 b.innerHTML = "Got it";
 b.title = "Close warning";
 b.addEventListener("click", close());
 document.body.appendChild(b);
-
-function close() {
-  div.style.visibility = "hidden";
-  txt.style.visibility = "hidden";
-  b.style.visibility = "hidden";
-}
