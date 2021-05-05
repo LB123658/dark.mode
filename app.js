@@ -33,6 +33,7 @@ div.style.height = "80px";
 div.style.background = "lightgrey";
 div.style.zIndex = "10";
 div.style.visibility = "visible";
+div.className = "div";
 document.body.appendChild(div);
 
 var txt = document.createElement("P");
@@ -42,10 +43,11 @@ txt.style.fontFamily = "arial";
 txt.style.zIndex = "11";
 txt.style.top = "10px";
 txt.style.color = "grey";
-txt.style.fontSize = "22px";
+txt.style.fontSize = "18px";
 txt.style.userSelect = "none";
 txt.style.visibility = "visible";
 txt.innerHTML = "Reloading or leaving this page will turn off dark mode.";
+txt.className = "txt";
 document.body.appendChild(txt);
 
 var css = document.createElement("LINK");
@@ -53,6 +55,12 @@ css.rel = "stylesheet";
 css.type = "text/css";
 css.href = "https://lb123658.github.io/Boost-HTML-Editor/library.css";
 document.head.appendChild(css);
+
+var s = document.createElement("LINK");
+s.rel = "stylesheet";
+s.type = "text/css";
+s.href = "https://lb123658.github.io/dark.mode/library.css";
+document.head.appendChild(s);
 
 var b = document.createElement("A");
 b.className = "blue-social";
@@ -64,8 +72,11 @@ b.style.height = "30px";
 b.style.visibility = "visible";
 b.style.padding = "10px";
 b.style.fontFamily = "arial";
+b.style.textDecoration = "none";
+b.style.textAlign = "center";
 b.innerHTML = "DarkMode js";
 b.title = "Learn more about DarkMode js";
 b.href = "https://lb123658.github.io/dark.mode";
 b.target = "_blank";
+b.className = "b";
 document.body.appendChild(b);
