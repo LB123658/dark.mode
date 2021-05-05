@@ -11,10 +11,6 @@ var i;
 for (i = 0; i < x.length; i++) {
   x[i].style.color = "grey";
 }
-// close warning about dark mode
-function close() {
-  setTimeout(delete() {div.style.visibility = "hidden"; txt.style.visibility = "hidden"; b.style.visibility = "hidden";}, 5000);
-}
 
 // create dark background
 var mode = document.createElement("DIV");
@@ -65,7 +61,6 @@ b.style.right = "15%";
 b.style.zIndex = "11";
 b.style.top = "50px";
 b.style.visibility = "hidden";
-b.innerHTML = "Got it";
-b.title = "Close warning";
-b.addEventListener("click", close());
+b.innerHTML = "DarkMode js";
+b.title = "DarkMode js";
 document.body.appendChild(b);
