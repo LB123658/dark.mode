@@ -21,3 +21,17 @@
   background: #282828;
   z-index: -1;
 }
+input {
+  background: #282828;
+  color: grey;
+  border: 1px solid grey;
+}
+button {
+  background: #282828;
+  border: 1px solid grey;
+  color: grey;
+}
+button:hover {
+  background: grey;
+  color: #282828;
+}
