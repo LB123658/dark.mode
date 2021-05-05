@@ -16,7 +16,7 @@ light.id = "light-mode-button";
 light.style.background = "transparent";
 light.style.border = "none";
 light.style.color = "grey";
-light.addEventListener("click", off());
+light.addEventListener("click", off);
 document.body.appendChild(light);
 
 // creates button to turn on dark mode
@@ -26,7 +26,7 @@ dark.id = "dark-mode-button";
 dark.style.background = "transparent";
 dark.style.border = "none";
 dark.style.color = "grey";
-dark.addEventListener("click", on());
+dark.addEventListener("click", on);
 document.body.appendChild(dark);
 
 // to style these buttons the id for the one that turns on light mode is "light-mode-button" and the id for the one that turns dark mode on is "dark-mode-button"
