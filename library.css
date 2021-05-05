@@ -1,0 +1,13 @@
+
+* {
+  transform: translate(0px,50px); 
+}
+.div {
+  transform: translate(0px, -50px);
+}
+.txt {
+  transform: translate(0px, -50px);
+}
+.b {
+  transform: translate(0px, -50px);
+}
