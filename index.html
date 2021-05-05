@@ -86,13 +86,32 @@ transition: transform .2s;
 #second-code:hover {
 transform: scale(1.05);
 }
+#darkMode {
+height: 40px;
+width: 100%;
+background: #0366d6;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 20px;
+color: white;
+transition: transform .2s;
+}
+#darkMode:hover {
+opacity: 0.9;
+transform: scale(1.05);
+}
 </style>
 </head>
 <body>
 
 <p id="title">DarkMode</p>
 
-<p id="about">Switch any website to dark mode. Simply paste the code provided into the JavaScript console of any website to switch it to dark mode. Test it on this site to see how it works.<br><span class="i">Reloading the site you use this on will turn off dark mode.</span><br><br>
+<p id="about">
+<a href="https://lb123658.github.io/dark.mode/?mode=dark" id="darkA">
+<button id="darkMode">NEW: See how built in DarkMode looks</button></a>
+
+<br><br>Switch any website to dark mode. Simply paste the code provided into the JavaScript console of any website to switch it to dark mode. Test it on this site to see how it works.<br><span class="i">Reloading the site you use this on will turn off dark mode.</span><br><br>
 How to access JavaScript console:<br>
 On Mac: <span class="highlight">option + command + c, then at the top click on "Console"</span><br>
 On other computers: <span class="highlight">right click and "Inspect", then at the top click on "Console"</span><br><br>
@@ -136,11 +155,11 @@ document.getElementById("github").style.fill = "#0366d6";
 function off() {
 document.getElementById("github").style.fill = "#282828";
 }
-
-// this part is a test
 if (window.location.search == "?mode=dark") {
 var script = document.createElement("SCRIPT");
 script.src = "https://lb123658.github.io/dark.mode/text.js";
+document.getElementById("darkA").href = "https://lb123658.github.io/dark.mode?mode=light";
+document.getElementById("darkMode").innerHTML = "Go back to light mode";
 document.body.appendChild(script);
 } else {
   ;
