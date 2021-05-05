@@ -68,6 +68,7 @@ b.style.fontFamily = "arial";
 b.style.textDecoration = "none";
 b.style.textAlign = "center";
 b.style.transform = "translate(0px, -50px)";
+b.style.color = "white";
 b.innerHTML = "About DarkMode";
 b.title = "Learn more about DarkMode js";
 b.href = "https://lb123658.github.io/dark.mode";
