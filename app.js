@@ -34,8 +34,10 @@ document.body.appendChild(div);
 
 var txt = document.createElement("P");
 txt.style.position = "absolute";
-txt.style.marginLeft = "5%";
+txt.style.marginLeft = "15%";
 txt.style.fontFamily = "arial";
+txt.style.zIndex = "11";
+txt.style.top = "10px";
 txt.style.color = "grey";
 txt.style.fontSize = "16px";
 txt.style.userSelect = "none";
@@ -56,4 +58,4 @@ var css = document.createElement("LINK");
 css.rel = "stylesheet";
 css.type = "text/css";
 css.href = "https://lb123658.github.io/Boost-HTML-Editor/library.css";
-document.body.appendChild(css);
+document.head.appendChild(css);
