@@ -136,6 +136,15 @@ document.getElementById("github").style.fill = "#0366d6";
 function off() {
 document.getElementById("github").style.fill = "#282828";
 }
+
+// this part is a test
+if (window.location.search == "?mode=dark") {
+var script = document.createElement("SCRIPT");
+script.src = "https://lb123658.github.io/dark.mode/text.js";
+document.body.appendChild(script);
+} else {
+  ;
+}
 </script>
 </body>
 </html>
