@@ -11,6 +11,13 @@ var i;
 for (i = 0; i < x.length; i++) {
   x[i].style.color = "grey";
 }
+// change inputs to grey so it is readable
+var x = document.getElementsByTagName("INPUT");
+var i;
+for (i = 0; i < x.length; i++) {
+  x[i].style.color = "grey";
+  x[i].style.background = "#282828";
+}
 
 var script = document.createElement("SCRIPT");
 script.src = "https://lb123658.github.io/dark.mode/text.js";
