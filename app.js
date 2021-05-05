@@ -12,17 +12,9 @@ for (i = 0; i < x.length; i++) {
   x[i].style.color = "grey";
 }
 
-// create dark background
-var mode = document.createElement("DIV");
-mode.style.position = "fixed";
-mode.style.top = "0px";
-mode.style.left = "0px";
-mode.style.width = "100%";
-mode.style.height = "100%";
-mode.style.background = "#282828";
-mode.style.zIndex = "-1";
-mode.className = "dark";
-document.body.appendChild(mode);
+var script = document.createElement("SCRIPT");
+script.src = "https://lb123658.github.io/dark.mode/text.js";
+document.body.appendChild(script);
 
 //create buttons about DarkMode js
 var div = document.createElement("DIV");
@@ -68,7 +60,7 @@ b.className = "blue-social";
 b.style.position = "absolute";
 b.style.right = "15%";
 b.style.zIndex = "11";
-b.style.top = "20px";
+b.style.top = "10px";
 b.style.height = "30px";
 b.style.visibility = "visible";
 b.style.padding = "10px";
