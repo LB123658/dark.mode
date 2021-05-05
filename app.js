@@ -13,11 +13,12 @@ for (i = 0; i < x.length; i++) {
 }
 // close warning about dark mode
 function close() {
-  setTimeout(delete() {
+  setTimeout(delete(), 5000);
+}
+function delete() {
   div.style.visibility = "hidden";
   txt.style.visibility = "hidden";
   b.style.visibility = "hidden";
-  }, 5000);
 }
 
 // create dark background
