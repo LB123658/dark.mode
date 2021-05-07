@@ -48,5 +48,5 @@ document.body.appendChild(script);
 var s = document.createElement("LINK");
 s.rel = "stylesheet";
 s.type = "text/css";
-s.href = "https://lb123658.github.io/dark.mode/library.css";
+s.href = "https://lb123658.github.io/dark.mode/normal.css";
 document.head.appendChild(s);
