@@ -2,7 +2,7 @@ var lines = "<div class='vpixel'></div> <div class='vpixel'></div> <div class='v
 function style() {
 var div = document.createElement("div");
 div.innerHTML = lines;
-div.style.position = "absolute";
+div.style.position = "fixed";
 div.style.top = "0px";
 div.style.left = "0px";
 div.style.width = "100%";
