@@ -11,3 +11,4 @@ var css = document.createElement("style");
 css.innerHTML = "#container { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 1; } .vpixel { height: 1px; width: 100%; margin-top: 1px; background: #282828; }";
 document.head.appendChild(css);
 }
+style();
